@@ -1,11 +1,12 @@
 // src/pages/ChatPage.tsx
 import { useState } from "react";
 import { useMediaQuery } from "@/hooks/use-media-query";
-import { Sidebar } from "@/components/chat/Sidebar";
-import { ChatList } from "@/components/chat/ChatList";
-import { ChatHeader } from "@/components/chat/ChatHeader";
-import { ChatInput } from "@/components/chat/ChatInput";
-import { Message } from "@/components/chat/Message";
+import { Sidebar } from "@/components/chat/sidebar/Sidebar";
+import { ChatList } from "@/components/chat/chatList/ChatList";
+import { ChatHeader } from "@/components/chat/chatHeader/ChatHeader";
+import { Message } from "@/components/chat/message/Messages";
+import { ChatInput } from "@/components/chat/ChatInput/ChatInput";
+
 
 export function ChatPage() {
   const [selectedChat, setSelectedChat] = useState<string | null>(null);
